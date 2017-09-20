@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <ul>
+    <router-link to="circle-dragging-i">circle-dragging-i</router-link>
+    <router-link to="zoom">zoom</router-link>
+    </ul>
     <router-view></router-view>
   </div>
 </template>
