@@ -1,15 +1,14 @@
 <template>
+<div>
+  <a href="https://bl.ocks.org/mbostock/3127661b6f13f9316be745e77fdfb084"> Drag & Zoom II</a>
   <svg :width="width" :height="height">
     <g :transform="transform">
       <circle v-for="(point, key) in points" :cx="point.x" :cy="point.y" :r="2.5" :key="key"></circle>
     </g>
   </svg>
+</div>
 </template>
 <script>
-
-/**
- * Drag & Zoom II from https://bl.ocks.org/mbostock/3127661b6f13f9316be745e77fdfb084
-*/
 
 import * as d3 from 'd3';
 
